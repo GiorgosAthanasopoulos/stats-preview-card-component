@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Stats preview card component</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+            @import url("https://fonts.googleapis.com/css2?family=styleLexend+Deca&display=swap");
+
+            .attribution {
+                margin-top: 15px;
+                font-size: 11px;
+                text-align: center;
+            }
+
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+
+            * {
+                font-family: "Inter", sans-serif;
+            }
+
+            div.stat {
+                font-family: "Lexend Deca", sans-serif;
+            }
+
+            body {
+                background-color: hsl(233, 47%, 7%);
+            }
+
+            div.card {
+                background-color: hsl(244, 38%, 16%);
+                width: 800px;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: row;
+                height: 380px;
+            }
+
+            b.accent {
+                color: hsl(277, 64%, 61%);
+            }
+
+            h1.title,
+            p.stat {
+                color: hsl(0, 0%, 100%);
+            }
+
+            p.description {
+                color: hsla(0, 0%, 100%, 0.75);
+            }
+
+            p.stat-heading {
+                color: hsla(0, 0%, 100%, 0.6);
+            }
+
+            div.stats {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+            }
+
+            div.stats * {
+                margin: 0;
+                padding: 0;
+                margin-top: 5px;
+            }
+
+            div.card-left {
+                padding: 20px;
+                margin-right: 75px;
+            }
+
+            div.image {
+                content: url("./images/image-header-desktop.jpg");
+                box-shadow: inset 0 0 99999px hsl(277, 64%, 61%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-left">
+                <h1 class="title">
+                    Get
+                    <b class="accent">insights</b>
+                    that help your business grow.
+                </h1>
+                <p class="description">
+                    Discover the benefits of data analytics and make better
+                    decisions regarding revenue, customer experience, and
+                    overall efficiency.
+                </p>
+                <br />
+                <br />
+                <div class="stats">
+                    <div class="stat1 stat">
+                        <p class="stat">10k+</p>
+                        <p class="stat-heading">COMPANIES</p>
+                    </div>
+                    <div class="stat2 stat">
+                        <p class="stat">314</p>
+                        <p class="stat-heading">TEMPLATES</p>
+                    </div>
+                    <div class="stat3 stat">
+                        <p class="stat">12M+</p>
+                        <p class="stat-heading">QUERIES</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image"></div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.github.com/giorgosathanasopoulos"
+                >Giorgos Athanasopoulos</a
+            >.
+        </div>
+    </body>
+</html>
